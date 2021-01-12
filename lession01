@@ -85,17 +85,15 @@ else:
 Программа должна принимать значения параметров a и b и выводить одно натуральное число — номер дня.
 //
 
-
 a = int(input("Введите результаты пробежки первого дня в км "))
 b = int(input("Введите общий желаемый результат в км "))
-result_days = 1
+day_num = 1
 result_km = a
 
 while a < b:
-    print(f"{result_days} -ый день = {a}")
+    print(f"{day_num} -ый день = {a}")
     a *= 1.1
-    result_days += 1
+    day_num += 1
     result_km = result_km + a
-print(f"{result_days} -ый день = {a}")
-print(f"Вы достигнете требуемых показателей на {result_days} день ")
-
+print(f"{day_num} -ый день = {a}")
+print(f"Вы достигнете требуемых показателей на {day_num} день ")
